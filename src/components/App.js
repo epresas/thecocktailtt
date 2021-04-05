@@ -20,13 +20,13 @@ const App = () => {
   //     </div>
   //   </div>
   // );
-  return(
-    <Switch>
-      <Route path="/" component={Hotel} exact />
-      <Route path="/hotel" component={Hotel} />
-      <Route path='/drinks' component={Drinks} />
-    </Switch>
-  )
+return(
+  <Switch>
+    <Route path="/" component={Hotel} exact />
+    <Route path="/hotel" component={Hotel} />
+    <Route path='/drinks' component={Drinks} />
+  </Switch>
+)
 
 }
 
