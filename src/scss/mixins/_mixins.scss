@@ -1,0 +1,49 @@
+/**
+ * Creates a media query should a breakpoint is given.
+ * Can be useful with mobile-first or desktop-first.
+ *
+ * @mixin
+ * @section Style Mixins
+ * @param $breakpoint Value in px of the breakpoint to create the media query
+ * @param $min-or-max Determines if the media query is mobile-first (min-width) or desktop-first(max-width)
+ * @example
+ *  @include create-mq(768, 'min');
+ *  @include create-mq($bp-md, 'max');
+ */
+@mixin create-mq($breakpoint, $min-or-max) {
+  @if($breakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (#{$min-or-max}-width: $breakpoint *1px) {
+      @content;
+    }
+  }
+}
+
+/**
+ * Creates the column classes for the custom-grid
+ *
+ * @mixin
+ * @section Style Mixins
+ * @param $modifier Value in px of the breakpoint to create the media query
+ * @param $grid-cols Number of columns of the custom-grid
+ * @example
+ *  @include create-mq(768, 'min');
+ *  @include create-mq($bp-md, 'max');
+ */
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-mq($breakpoint, 'min') {
+    &__col#{$modifier}-offset-0 {
+      margin-left: 0;
+    }
+    @for $i from 1 through $grid-cols {
+      &__col#{$modifier}-#{$i} {
+        // width of the column. example: (100 / (12 / 3)) * 1% = 25% === 3 columns out of 12
+        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+      }
+      &__col#{$modifier}-offset-#{$i} {
+        margin-left: (100 / ($grid-cols / $i) ) * 1%;
+      }
+    }
+  }
+}
