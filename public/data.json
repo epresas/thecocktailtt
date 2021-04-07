@@ -1,10 +1,67 @@
 {
   "hotel": {
     "tabName": "hotel",
-    "title": "Hotel page"
+    "title": "Hotel page",
+    "stars": 4,
+    "hotelName": "Mieres del Camín Apartamentos",
+    "selectPlanLabel": "Elegir régimen",
+    "plans": [
+      {
+        "id": 0,
+        "planName": "Solo Alojamiento",
+        "planFeatures": [
+          "Sin régimen",
+          "Botella de agua de bienvenida"          
+        ]
+      },
+      {
+        "id": 1,
+        "planName": "Alojamiento y Desayuno",
+        "planFeatures": [
+          "Desayuno buffet completo"          
+        ]
+      },
+      {
+        "id": 2,
+        "planName": "Media Pensión",
+        "planFeatures": [
+          "Desayuno buffet completo",
+          "Cena buffet",
+          "No incluye bebidas"          
+        ]
+      },
+      {
+        "id": 3,
+        "planName": "Todo incluido",
+        "planFeatures": [
+          "Dispondrás de comida y bebida todo el día y durante toda tu estancia.",          
+          "Restaurante buffet",        
+          "Snack Bar",
+          "Servicio de bares (marcas nacionales)"        
+        ]
+      },
+      {
+        "id": 4,
+        "planName": "Unlimited services",
+        "planFeatures": [
+          "Restaurante buffet con bebidas Premium",
+          "Restaurante a la carta (una cena por estancia)",
+          "Snack Bar con bebidas Premium",
+          "Minibar incluido",
+          "Acceso a SPA y 45 minutos de masaje por persona",
+          "Restaurante buffet con bebidas Premium",
+          "Actividades deportivas (acuáticas sin motor)",          
+          "Caja fuerte",        
+          "Parking gratuito",
+          "Lavandería"
+        ]
+      }
+    ]
   },
   "drinks": {
-    "tabName": "drinks",
-    "title": "Drinks page"
+    "tabName": "bebidas",
+    "title": "Bebidas",
+    "subtitle": "Cervezas",
+    "pairingLabel": "Ideal para combinar con:"
   }
 }

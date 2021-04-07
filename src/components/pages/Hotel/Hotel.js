@@ -5,7 +5,7 @@ import useFetch from '../../../hooks/useFetch';
 const Hotel = (props) => {
   const data = useFetch('./data.json', {})
   const { response, isLoading, error } = data;
-  return <HotelTemplate title={response && response.hotel.title}></HotelTemplate>
+  return <HotelTemplate hotelInfo={response && response.hotel}></HotelTemplate>
 }
 
 export default Hotel;

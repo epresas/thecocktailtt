@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+import './NavBar.scss';
 
 const NavBar = (props) => {
   return (
@@ -7,8 +9,6 @@ const NavBar = (props) => {
       <ul className='navbar__list'>
         <Link to='/hotel' activeClassName='navlink--active'>Hotel prices</Link>
         <Link to='/drinks' activeClassName='navlink--active'>Drinks</Link>
-        <Link></Link>
-
       </ul>
     </nav>
   )
