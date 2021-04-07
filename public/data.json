@@ -1,0 +1,10 @@
+{
+  "hotel": {
+    "tabName": "hotel",
+    "title": "Hotel page"
+  },
+  "drinks": {
+    "tabName": "drinks",
+    "title": "Drinks page"
+  }
+}
