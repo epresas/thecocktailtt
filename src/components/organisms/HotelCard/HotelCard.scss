@@ -1,0 +1,60 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/partials/base';
+
+.card {
+  border: 1px solid $color-border-light;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-roboto;
+  justify-content: space-between;
+  height: 43rem;
+  margin: 0 auto;
+  max-width: 26rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem 1.8rem;
+  width: calc( 100% - 6rem);
+  
+  @media only screen and (min-width: 768px) {
+    height: 48rem;
+    width: calc( 100% - 3rem );
+  }
+  @media only screen and (min-width: 1200px) {
+    max-width: 22.5rem;
+    width: calc( 100% - .7rem );
+  }
+
+  &--selected {
+    border-color: $color-border-active;
+  }
+}
+
+.card__header {
+  align-items: center;
+  display: flex;
+  height: 6.6rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+  
+  &::after {
+    content: '';
+    background-color: $color-border-light;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 72px;
+  }
+}
+
+.card__title {
+  color: $color-blue-primary;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+  max-width: 15rem;
+  text-align: center;
+}

@@ -2,16 +2,30 @@
 $color-black-pure: #000;
 /** @color White */
 $color-white: #fff;
+/** @color primary blue */
+$color-blue-primary: #105AA3;
 /** @color Light blue */
 $color-blue-light: #4BA7EE;
 /** @color Medium blue */
 $color-blue-medium: #003970;
-/** @color Dark blue */
+/** @color Dark  Blue  */
 $color-blue-dark: #001841;
-/** @color Grey */
-$color-grey: #4E5156;
+/** @color Active  Blue  */
+$color-blue-active: #033970;
+/** @color Grey Primary */
+$color-grey-primary: #4E5156;
+/** @color Grey Secondary */
+$color-grey-secondary: #616469;
+/** @color Grey Light */
+$color-grey-light: #9DA2A9;
+/** @color Grey Light 2 */
+$color-grey-light-2: #F9F9FB;
+/** @color Grey light translucid  */
+$color-grey-light-translucid: rgba(222, 225, 232, 0.376245);
 /** @color Red */
 $color-red: #D8171D;
+/** @color Green */
+$color-green: #6DC138;
 /** @color Orange */
 $color-orange: #FFAB48;
 /** @color Yellow */
@@ -20,5 +34,7 @@ $color-yellow: #FFEF63;
 $color-border-active: #326C96;
 /** @color Light Border */
 $color-border-light: #C9E3F9;
+/** @color Medium Border */
+$color-border-medium: #8B9199;
 /** @color Dark Border */
 $color-border-dark: #DEE1E8;

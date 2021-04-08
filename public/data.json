@@ -1,10 +1,5 @@
 {
   "hotel": {
-    "tabName": "hotel",
-    "title": "Hotel page",
-    "stars": 4,
-    "hotelName": "Mieres del Camín Apartamentos",
-    "selectPlanLabel": "Elegir régimen",
     "plans": [
       {
         "id": 0,
@@ -57,11 +52,5 @@
         ]
       }
     ]
-  },
-  "drinks": {
-    "tabName": "bebidas",
-    "title": "Bebidas",
-    "subtitle": "Cervezas",
-    "pairingLabel": "Ideal para combinar con:"
   }
 }

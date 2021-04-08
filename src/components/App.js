@@ -2,8 +2,9 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Hotel from './pages/Hotel/Hotel'
-import Drinks from './pages/Drinks/Drinks'
+import Drinks from './pages/Drinks/Drinks';
 
+import '../index.scss'
 const App = () => {
   // return (
   //   <div style={{background: 'red'}} className='grid'>

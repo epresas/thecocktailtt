@@ -1,7 +1,29 @@
-.list {
+@import '../../../scss/variables/variables';
+@import '../../../scss/partials/base';
 
+.list {
+  color: $color-blue-dark;
+  list-style: none;
+  margin-bottom: auto;
+  margin-left: .5rem;
+  max-height: 34rem;
+  overflow-y: auto;
+
+  @media only screen and (max-width: 767px) {
+    max-height: 25rem;
+  }
 }
 
 .list__item {
-  
+  line-height: 1.7rem;
+  margin: 0.4rem 0;
+  display: flex;
+
+  .list__bullet {
+    margin-right: 1rem;
+  }
+
+  .list__description {
+    flex: 1;
+  }
 }

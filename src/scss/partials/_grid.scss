@@ -45,6 +45,7 @@ $grid-cols: 12;
 .grid {
   max-width: $bp-md * 1px;
   margin: 0 auto;
+
   &--fluid {
     margin: 0;
     max-width: 100%;
@@ -53,6 +54,10 @@ $grid-cols: 12;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    &--centered {
+      justify-content: center;
+    }
   }
   @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid-cols, $breakpoint);
