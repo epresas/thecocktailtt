@@ -2,5 +2,46 @@
 @import '../../../scss/partials/base';
 
 .title {
+  margin: 1rem;
   
+  @media only screen and (min-width: 768px) {
+    font-size: 3rem;
+    margin: 0
+  }
+
+  &-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem 0;
+    
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  
+  &--primary {
+    font-family: $font-roboto-slab;
+    color: $color-blue-dark;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+
+  }
+  &--secondary {
+    align-items: center;
+    color: $color-blue-primary;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 2.4rem;
+  }
+
+  &__prefix {
+    font-weight: normal;
+    margin-right: .8rem;
+    text-transform: uppercase;
+  }
 }
+

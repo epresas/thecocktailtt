@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './i18n'; // needed for bundling
+import './index.scss'
 
 import App from './components/App';
 

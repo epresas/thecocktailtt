@@ -1,0 +1,13 @@
+.rating-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1.5rem;
+  flex-basis: 100%;
+
+  @media only screen and (min-width: 768px) {
+    flex-basis: auto;
+  }
+  .icon:not(:last-child) {
+    margin-right: .5rem;
+  }
+}
