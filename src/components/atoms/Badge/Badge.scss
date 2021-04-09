@@ -1,0 +1,20 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/partials/base';
+
+.badge {
+  color: $color-black-pure;
+  height: 3.2rem;
+  padding: .4rem 5.4rem .4rem .7rem;
+  width: 8.6rem;
+
+  &--red {
+    background: $color-red;
+    color: $color-white;
+  }
+  &--yellow {
+    background: $color-yellow;
+  }
+  &--orange {
+    background: $color-orange;
+  }
+}

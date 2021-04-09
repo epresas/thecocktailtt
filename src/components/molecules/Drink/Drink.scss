@@ -1,0 +1,81 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/partials/base';
+
+.drink {
+  background: $color-white;
+  border: 1px solid $color-border-dark;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-roboto-slab;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 3.2rem;
+  padding: 1.7rem;
+  padding-right: 0; 
+  
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 1.7rem 0;
+  }
+
+  &__image {
+    align-self: center;
+    margin-bottom: 3rem;
+    
+    @media only screen and (min-width: 768px) {
+      align-self: flex-start;
+      margin-right: 3.2rem;
+    }
+  }
+
+  &__detail {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__name {
+    color: $color-blue-medium;
+    margin-bottom: 2rem;
+    
+    @media only screen and (min-width: 768px) {
+      margin-bottom: .4rem;
+    }
+  }
+
+  &__description {
+    color: $color-grey-primary;
+    font-family: $font-roboto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+    padding-right: 1.7rem;
+    
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0
+    }
+  }
+  
+  &__pairing {
+    color: $color-blue-secondary;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-top: auto;
+    padding-top: 2rem;
+    padding-right: 1.7rem;
+  }
+
+  &__badge {
+    align-self: flex-end;
+
+    @media only screen and (min-width: 768px) {
+      align-self: flex-start;
+      margin-top: .7rem;
+    }
+  }
+  &__label {
+    margin-right: .5rem;
+  }
+}

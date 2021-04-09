@@ -1,5 +1,6 @@
 {
   "hotel": {
+    "rating": 4,
     "plans": [
       {
         "id": 0,

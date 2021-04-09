@@ -39,6 +39,7 @@ const Hotel = (props) => {
     template = <HotelTemplate 
       plans={plans}
       planClicked={onPlanClicked}
+      rating={response.hotel.rating}
     ></HotelTemplate>
   }
   return template;

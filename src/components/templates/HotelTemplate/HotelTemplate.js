@@ -1,23 +1,24 @@
 import React, { Suspense } from 'react'
+import { useTranslation } from 'react-i18next';
+
 import Header from '../../organisms/Header/Header';
 import HotelCard from '../../organisms/HotelCard/HotelCard';
 import Title from '../../atoms/Title/Title';
 import Rating from '../../molecules/Rating/Rating';
 
-import { useTranslation } from 'react-i18next';
-
-
 const HotelTemplate = ({plans, planClicked, rating}) => {
   const { t } = useTranslation();
 
   return (
+    // TODO: implementar loader
+    // TODO: implementar wrapper y quitar el fluid
     <Suspense fallback="loading">
       <main className='grid--fluid'>
         <Header></Header>
         <Title primary>
           <span className='title__prefix'>{t('hotel.tabName')}</span>
           <span className='title'>{t('hotel.hotelName')}</span>
-          <Rating rating={5} />
+          <Rating rating={rating} />
         </Title>
         <section className='grid__row grid__row--centered'>
           {plans.map(plan => (
