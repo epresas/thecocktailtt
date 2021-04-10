@@ -6,7 +6,7 @@ import './index.scss'
 
 import App from './components/App';
 
-const renderApp = () => (
+const app =  (
   <Suspense fallback="loading...">
     <BrowserRouter>
       <App />
@@ -15,4 +15,4 @@ const renderApp = () => (
 );
 const root = document.getElementById('root');
 
-render(renderApp(), root);
+render( <React.StrictMode>{app}</React.StrictMode>, root);

@@ -6,7 +6,7 @@ const Drinks = (props) => {
   const API_BASE_URL = 'https://api.punkapi.com/v2/';
   const [drinks, setDrinks] = useState(null);
   const drinksData = useFetch(`${API_BASE_URL}beers`, {});
-  const { response, isLoading } = drinksData;
+  const { response } = drinksData;
 
   useEffect(() => {
     if (response) {

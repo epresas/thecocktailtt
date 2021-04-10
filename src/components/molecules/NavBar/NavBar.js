@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
   
-const NavBar = () => {
+const NavBar = (props) => {
   const linkList = [
     {
       id: 0,
@@ -26,6 +26,7 @@ const NavBar = () => {
             activeClassName='navlink--active'
             className='navbar__link'
             to={link.to}
+            exact={link.exact}
           >
             {link.text}
           </NavLink>
