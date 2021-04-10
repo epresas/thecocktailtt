@@ -22,11 +22,10 @@ const HotelTemplate = ({plans, planClicked, rating}) => {
         </Title>
         <section className='grid__row grid__row--centered'>
           {plans.map(plan => (
-            <div className='grid__col-12 grid__col-sm-6 grid__col-md-4 grid__col-xl-2'>
+            <div className='grid__col-12 grid__col-sm-6 grid__col-md-4 grid__col-xl-2' key={plan.id}>
               <HotelCard 
                 id={`plan_${plan.id}`}
                 name={`plan_${plan.id}`}
-                key={plan.id}
                 selected={plan.selected}
                 features={plan.planFeatures}
                 label={t('hotel.selectPlanLabel')}

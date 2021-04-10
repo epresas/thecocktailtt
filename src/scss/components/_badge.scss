@@ -1,0 +1,29 @@
+/**
+ * @atom Badge
+ * @section Components
+ * @modifiers
+ *  .badge--red A red badge for high ABV drinks
+ *  .badge--orange An orange badge for medium ABV drinks
+ *  .badge--yellow A red badge for low ABV drinks
+ * @markup
+ *  <Badge abv='11.0'/>
+ *  <span class="badge badge--orange">8.0</span>
+ *  <span class="badge badge--yellow">4.0</span>
+ */
+.badge {
+  color: $color-black-pure;
+  height: 3.2rem;
+  padding: .4rem 5.4rem .4rem .7rem;
+  width: 8.6rem;
+
+  &--red {
+    background: $color-red;
+    color: $color-white;
+  }
+  &--yellow {
+    background: $color-yellow;
+  }
+  &--orange {
+    background: $color-orange;
+  }
+}

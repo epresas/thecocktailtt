@@ -1,0 +1,64 @@
+.navbar {
+  color: $color-blue-light;
+  font-family: $font-roboto-slab;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-transform: capitalize;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__tab { 
+    align-items: center;
+    display: flex;
+    height: 4.7rem;
+
+    &:not(:last-of-type) {
+      margin-right: .5rem;
+    }
+  }
+
+  &__link {
+    padding: 1.2rem 2rem;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+
+    &::after {
+      background-color: $color-blue-medium;
+      bottom: -0.3rem;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: width .15s linear;
+      width: 0;
+    }
+    
+    &:hover {
+      &::after {
+        background-color: currentColor;
+        width: 100%;
+      }
+    }
+    &:visited  {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline-color: $color-blue-light;
+    }
+
+    &.navlink--active {
+      // border-bottom: .2rem solid $color-blue-medium;
+      color: $color-blue-medium;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

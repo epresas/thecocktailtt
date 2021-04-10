@@ -2,8 +2,6 @@ import React from 'react'
 import List from '../../atoms/List/List';
 import RadioButton from '../../atoms/RadioButton/RadioButton';
 
-import './HotelCard.scss'
-
 const HotelCard = ({id, label, features, name, title, selected, cardClicked}) => {
   const classesArray = ['card'];
   

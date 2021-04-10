@@ -1,5 +1,4 @@
 import React from 'react'
-import './Image.scss'
 
 const Image = ({src, alt}) => {
   return <figure className='image-wrapper'>

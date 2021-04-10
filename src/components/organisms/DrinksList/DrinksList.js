@@ -1,8 +1,6 @@
 import React from 'react'
 import Drink from '../../molecules/Drink/Drink';
 
-import './DrinksList.scss';
-
 const DrinksList = ({drinksList}) => {
   return (
     <ul className='drinks-list'>

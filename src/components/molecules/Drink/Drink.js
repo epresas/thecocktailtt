@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import Image from '../../atoms/Image/Image';
 import Badge from '../../atoms/Badge/Badge'
-import './Drink.scss'
 
 const Drink = ({name, description, foodPairing, abv, img}) => {
   const { t } = useTranslation();

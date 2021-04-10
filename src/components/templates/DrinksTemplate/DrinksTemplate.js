@@ -14,7 +14,7 @@ const DrinksTemplate = ({drinks}) => {
     // TODO: implementar loader
 
     <Suspense fallback="loading">
-      <main className=''>
+      <main>
         <Header></Header>
           <Title>
             <span className='title__cushion'>

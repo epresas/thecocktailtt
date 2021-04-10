@@ -1,5 +1,4 @@
 import React from 'react';
-import './Rating.scss';
 
 import Icon from '../../atoms/Icon/Icon';
 
@@ -12,7 +11,7 @@ const Rating = ({ rating }) => {
     return starsArray;
   }
 
-  const stars = <div className="rating-container">
+  const stars = <div className="rating-container" data-test-id='t-rating'>
     {getStars()}
   </div>
 

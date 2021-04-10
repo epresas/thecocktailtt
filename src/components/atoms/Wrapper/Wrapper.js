@@ -1,5 +1,4 @@
 import React from 'react'
-import './Wrapper.scss'
 
 const Wrapper = ({children, bordered}) => {
   const classesArray = ['wrapper'];

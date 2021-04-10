@@ -1,14 +1,36 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import './NavBar.scss';
-
-const NavBar = (props) => {
+  
+const NavBar = () => {
+  const linkList = [
+    {
+      id: 0,
+      text: 'hotel',
+      to: '/hotel'
+    },
+    {
+      id: 1,
+      text: 'bebidas',
+      to: '/drinks'
+    }
+  ];
   return (
     <nav className='navbar'>
       <ul className='navbar__list'>
-        <Link to='/hotel' activeClassName='navlink--active'>Hotel prices</Link>
-        <Link to='/drinks' activeClassName='navlink--active'>Drinks</Link>
+        {linkList.map(link => <li 
+          className='navbar__tab'
+          key={link.id}
+        >
+          <NavLink
+            activeClassName='navlink--active'
+            className='navbar__link'
+            to={link.to}
+          >
+            {link.text}
+          </NavLink>
+        </li>
+        )}
       </ul>
     </nav>
   )

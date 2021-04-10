@@ -13,7 +13,8 @@ i18n
   // init i18next
   .init({
     fallbackLng: 'en',
-    debug: true,
+    // turn on for development
+    debug: false,
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

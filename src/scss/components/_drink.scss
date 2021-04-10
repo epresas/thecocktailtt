@@ -1,9 +1,7 @@
-@import '../../../scss/variables/variables';
-@import '../../../scss/partials/base';
-
 .drink {
   background: $color-white;
   border: 1px solid $color-border-dark;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   font-family: $font-roboto-slab;
@@ -11,9 +9,15 @@
   line-height: 2.4rem;
   margin-bottom: 3.2rem;
   padding: 1.7rem;
-  padding-right: 0; 
+  padding-right: 0;
+  transition: box-shadow .15s ease-in;
+
+  &:hover {
+    box-shadow: 0 2px 5px 2px $color-grey-light;
+  }
   
   @media only screen and (min-width: 768px) {
+    border-radius: 0;
     flex-direction: row;
     padding: 1.7rem 0;
   }

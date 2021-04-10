@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './Badge.scss'
-
 const Badge = ({ abv }) => {
   const classesArray = ['badge'];
   // Define the limits of abv for scalability
@@ -16,8 +14,6 @@ const Badge = ({ abv }) => {
  * @returns {String} - The classes that the badge will have.
  */
   const getClasses = () => {
-    debugger;
-    
     if (abv > medAbvLimit) {
       return classesArray.push('badge--red');
     }

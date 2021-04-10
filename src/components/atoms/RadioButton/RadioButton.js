@@ -1,5 +1,4 @@
 import React from 'react'
-import './RadioButton.scss'
 
 const RadioButton = ({name, id, label, selected, clicked}) => {
   const classesArray = ['radio-button'];
@@ -17,6 +16,7 @@ const RadioButton = ({name, id, label, selected, clicked}) => {
         id={id}
         checked={selected}
         onClick={clicked}
+        readOnly
         />
       <span className='radio-button__check'></span>
       <span className='radio-button__label'> {label}</span>
