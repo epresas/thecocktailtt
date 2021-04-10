@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 import Image from '../../atoms/Image/Image';
 import Badge from '../../atoms/Badge/Badge'
@@ -35,6 +36,14 @@ const Drink = ({name, description, foodPairing, abv, img}) => {
       <Badge abv={abv}/>
     </span>
   </li>
+}
+
+Drink.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  foodPairing: PropTypes.array.isRequired,
+  abv: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default Drink;

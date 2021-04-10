@@ -1,5 +1,6 @@
 import React from 'react'
 import Drink from '../../molecules/Drink/Drink';
+import PropTypes from 'prop-types';
 
 const DrinksList = ({drinksList}) => {
   return (
@@ -15,6 +16,10 @@ const DrinksList = ({drinksList}) => {
       />)}
     </ul>
   )
+}
+
+DrinksList.propTypes = {
+  drinksList: PropTypes.array.isRequired,
 }
 
 export default DrinksList;

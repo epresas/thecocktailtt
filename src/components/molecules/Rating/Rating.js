@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Icon from '../../atoms/Icon/Icon';
 
@@ -16,6 +17,15 @@ const Rating = ({ rating }) => {
   </div>
 
   return stars;
+}
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+}
+
+
+Rating.defaultProps = {
+  rating: 1,
 }
 
 export default Rating;

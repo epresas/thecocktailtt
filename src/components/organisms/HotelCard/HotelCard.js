@@ -1,6 +1,7 @@
 import React from 'react'
 import List from '../../atoms/List/List';
 import RadioButton from '../../atoms/RadioButton/RadioButton';
+import PropTypes from 'prop-types';
 
 const HotelCard = ({id, label, features, name, title, selected, cardClicked}) => {
   const classesArray = ['card'];
@@ -27,6 +28,14 @@ const HotelCard = ({id, label, features, name, title, selected, cardClicked}) =>
       />
     </article>
   )
+}
+
+HotelCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  selected: PropTypes.bool.isRequired,
+  features: PropTypes.array.isRequired,
+  cardClicked: PropTypes.func,
 }
 
 export default HotelCard;

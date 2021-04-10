@@ -1,8 +1,45 @@
-# Getting Started with Create React App
+  <iframe src="https://giphy.com/embed/28dPeI77HgLzYiFWEu" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :tropical_drink: The Cocktail :tropical_drink:
 
-## Available Scripts
+Code challenge made in react and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<hr>
+
+## :file_folder: File Structure :file_folder:
+
+The file structure for the components was based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/):
+
+📦 components
+ ┣ 📂 atoms
+ ┃ ┣ 📂 Badge
+ ┃ ┣ 📂 Button
+ ┃ ┣ 📂 Icon
+ ┃ ┣ 📂 Image
+ ┃ ┣ 📂 List
+ ┃ ┣ 📂 RadioButton
+ ┃ ┣ 📂 Title
+ ┃ ┗ 📂 Wrapper
+ ┣ 📂 molecules
+ ┃ ┣ 📂 Drink
+ ┃ ┣ 📂 NavBar
+ ┃ ┗ 📂 Rating
+ ┣ 📂 organisms
+ ┃ ┣ 📂 DrinksList
+ ┃ ┣ 📂 Header
+ ┃ ┗ 📂 HotelCard
+ ┣ 📂 pages
+ ┃ ┣ 📂 Drinks
+ ┃ ┗ 📂 Hotel
+ ┣ 📂 templates
+ ┃ ┣ 📂 DrinksTemplate
+ ┃ ┗ 📂 HotelTemplate
+ ┗ 📜 App.js
+
+ Isolating the components into the most compact and reusable way.
+
+<hr>
+## :computer: Available Scripts :computer:
 
 In the project directory, you can run:
 
@@ -39,32 +76,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<hr>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p style="text-align: center;"> Made by <a href="https://github.com/epresas">Edmundo Presas</a></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div style="text-align: center;">
+  <iframe src="https://giphy.com/embed/iIqmM5tTjmpOB9mpbn" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen"></iframe>
+</div>

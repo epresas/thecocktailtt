@@ -1,5 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
+/**
+ * ### Description
+ * Badge component that shows the abv levels on a drink.
+ * 
+ * It has three states:
+ * 
+ * + Red for drinks with abv over 10.0
+ * + Orange for drinks with abv over 5.0
+ * + Yellow for drinks with abv below 5.0
+ */
 const Badge = ({ abv }) => {
   const classesArray = ['badge'];
   // Define the limits of abv for scalability
@@ -30,6 +41,15 @@ const Badge = ({ abv }) => {
   return (
     <span className={ classesArray.join(' ')}>{abv}</span>
   );
+}
+
+Badge.propTypes = {
+  /** Abv level of the drink */
+  abv: PropTypes.number.isRequired,
+}
+
+Badge.defaultProps = {
+  abv: 1.0,
 }
 
 export default Badge;
