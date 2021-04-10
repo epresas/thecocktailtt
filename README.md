@@ -1,5 +1,3 @@
-  <iframe src="https://giphy.com/embed/28dPeI77HgLzYiFWEu" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
 # :tropical_drink: The Cocktail :tropical_drink:
 
 Code challenge made in react and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -8,37 +6,10 @@ Code challenge made in react and bootstrapped with [Create React App](https://gi
 
 ## :file_folder: File Structure :file_folder:
 
-The file structure for the components was based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/):
-
-📦 components
- ┣ 📂 atoms
- ┃ ┣ 📂 Badge
- ┃ ┣ 📂 Button
- ┃ ┣ 📂 Icon
- ┃ ┣ 📂 Image
- ┃ ┣ 📂 List
- ┃ ┣ 📂 RadioButton
- ┃ ┣ 📂 Title
- ┃ ┗ 📂 Wrapper
- ┣ 📂 molecules
- ┃ ┣ 📂 Drink
- ┃ ┣ 📂 NavBar
- ┃ ┗ 📂 Rating
- ┣ 📂 organisms
- ┃ ┣ 📂 DrinksList
- ┃ ┣ 📂 Header
- ┃ ┗ 📂 HotelCard
- ┣ 📂 pages
- ┃ ┣ 📂 Drinks
- ┃ ┗ 📂 Hotel
- ┣ 📂 templates
- ┃ ┣ 📂 DrinksTemplate
- ┃ ┗ 📂 HotelTemplate
- ┗ 📜 App.js
-
- Isolating the components into the most compact and reusable way.
+The file structure for the components was based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
 
 <hr>
+
 ## :computer: Available Scripts :computer:
 
 In the project directory, you can run:
@@ -79,7 +50,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <hr>
 
 <p style="text-align: center;"> Made by <a href="https://github.com/epresas">Edmundo Presas</a></p>
-
-<div style="text-align: center;">
-  <iframe src="https://giphy.com/embed/iIqmM5tTjmpOB9mpbn" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen"></iframe>
-</div>
